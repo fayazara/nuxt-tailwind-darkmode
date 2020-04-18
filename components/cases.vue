@@ -6,27 +6,27 @@
           <thead>
             <tr class="text-gray-600 dark:text-white">
               <th
-                class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100  dark:border-gray-500 dark:bg-gray-600 text-left text-xs font-semibold uppercase tracking-wider"
+                class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100  dark:border-gray-500 dark:bg-gray-800 text-left text-xs font-semibold uppercase tracking-wider"
               >
                 State
               </th>
               <th
-                class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100  dark:border-gray-500 dark:bg-gray-600 text-left text-xs font-semibold uppercase tracking-wider"
+                class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100  dark:border-gray-500 dark:bg-gray-800 text-left text-xs font-semibold uppercase tracking-wider"
               >
                 Confirmed
               </th>
               <th
-                class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100  dark:border-gray-500 dark:bg-gray-600 text-left text-xs font-semibold uppercase tracking-wider"
+                class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100  dark:border-gray-500 dark:bg-gray-800 text-left text-xs font-semibold uppercase tracking-wider"
               >
                 Active
               </th>
               <th
-                class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100  dark:border-gray-500 dark:bg-gray-600 text-left text-xs font-semibold uppercase tracking-wider"
+                class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100  dark:border-gray-500 dark:bg-gray-800 text-left text-xs font-semibold uppercase tracking-wider"
               >
                 Recovered
               </th>
               <th
-                class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100  dark:border-gray-500 dark:bg-gray-600 text-left text-xs font-semibold uppercase tracking-wider"
+                class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100  dark:border-gray-500 dark:bg-gray-800 text-left text-xs font-semibold uppercase tracking-wider"
               >
                 Deceased
               </th>
@@ -34,20 +34,30 @@
           </thead>
           <tbody class="dark:text-white transition-all">
             <tr v-for="(state, i) in states" :key="i">
-              <td class="px-5 py-5 border-b border-gray-200 dark:border-gray-500 bg-white dark:bg-gray-700 text-sm">
-                <p>{{state.state}}</p>
+              <td
+                class="px-5 py-5 border-b border-gray-200 dark:border-gray-500 bg-white dark:bg-gray-900 text-sm"
+              >
+                <p>{{ state.state }}</p>
               </td>
-              <td class="px-5 py-5 border-b border-gray-200 dark:border-gray-500 bg-white dark:bg-gray-700 text-sm">
-                <p>{{state.confirmed}}</p>
+              <td
+                class="px-5 py-5 border-b border-gray-200 dark:border-gray-500 bg-white dark:bg-gray-900 text-sm"
+              >
+                <p>{{ state.confirmed }}</p>
               </td>
-              <td class="px-5 py-5 border-b border-gray-200 dark:border-gray-500 bg-white dark:bg-gray-700 text-sm">
-                <p>{{state.active}}</p>
+              <td
+                class="px-5 py-5 border-b border-gray-200 dark:border-gray-500 bg-white dark:bg-gray-900 text-sm"
+              >
+                <p>{{ state.active }}</p>
               </td>
-              <td class="px-5 py-5 border-b border-gray-200 dark:border-gray-500 bg-white dark:bg-gray-700 text-sm">
-                <p>{{state.recovered}}</p>
+              <td
+                class="px-5 py-5 border-b border-gray-200 dark:border-gray-500 bg-white dark:bg-gray-900 text-sm"
+              >
+                <p>{{ state.recovered }}</p>
               </td>
-              <td class="px-5 py-5 border-b border-gray-200 dark:border-gray-500 bg-white dark:bg-gray-700 text-sm">
-                <p>{{state.deaths}}</p>
+              <td
+                class="px-5 py-5 border-b border-gray-200 dark:border-gray-500 bg-white dark:bg-gray-900 text-sm"
+              >
+                <p>{{ state.deaths }}</p>
               </td>
             </tr>
           </tbody>
