@@ -21,6 +21,9 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode'
   ],
+  purgeCSS: {
+    whitelist: ['dark-mode'],
+  },
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
@@ -28,7 +31,7 @@ export default {
   axios: {
   },
   build: {
-    extend (config, ctx) {
+    extend(config, ctx) {
     }
   }
 }
